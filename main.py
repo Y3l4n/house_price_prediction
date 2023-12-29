@@ -8,7 +8,7 @@ import seaborn as sns
 from sklearn.metrics import mean_squared_error,r2_score
 import statsmodels.api as sm  
 
-housing = pd.DataFrame(pd.read_excel("housing price.py/dataset.xlsx"))
+housing = pd.DataFrame(pd.read_excel("housing price.py/House Price Dataset.xlsx"))
 housing.pop('Id')
 housing=housing[(~housing["SalePrice"].isnull())]
 
