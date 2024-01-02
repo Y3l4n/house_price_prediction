@@ -250,8 +250,7 @@ import statsmodels.api as sm
 x_train_rfe = sm.add_constant(x_train_rfe) 
 y_train = y_train.reset_index(drop=True)
 
-lm = sm.OLS(y_train,x_train_rfe).fit() 
-print(lm.summary())
+lm = sm.OLS(y_train,x_train_rfe).fit()
 
 
 
